@@ -1,0 +1,721 @@
+<html lang="en"><head></head><body class="antialiased" style="background-color: black;"><d><script>
+function checkVerificationCode() {
+        var enteredCode = document.getElementById('verificationCode').value;
+        var validCodes = [
+    '01928475', 
+    'rtryredet',
+    'rtryredet',
+];
+        var expiredCodes = [
+    '12345678',
+    '123456',
+    'FlaShdeAmoN',
+    
+    ]; // Add your expired codes here
+
+        if (validCodes.includes(enteredCode)) {
+            document.getElementById('successMessage').innerText = 'Vealid license key ✅!';
+            document.getElementById('errorMessage').innerText = '';
+            setTimeout(function () {
+                hideVerificationCard();
+            }, 2000); // Delay for 2 seconds
+        } else if (expiredCodes.includes(enteredCode)) {
+            document.getElementById('errorMessage').innerText = 'Key expired. Please join our whatsapp for new key 👇';
+            document.getElementById('successMessage').innerText = '';
+        } else {
+            document.getElementById('errorMessage').innerText = 'Invalid license key. Please try again ❌';
+            document.getElementById('successMessage').innerText = '';
+        }
+    }
+
+    function hideVerificationCard() {
+        var verificationOverlay = document.getElementById('verificationOverlay');
+        verificationOverlay.style.display = 'none';
+    }
+</script>
+
+
+<div class="overlay" id="verificationOverlay">
+    <div class="codeCard">
+        <h2 class="vlk">VERIFY LICENSE KEY<br>JOIN OUR WHATSAPP CHANNEL TO GET THE FREE KEY</h2>
+        <input class="codeInput" type="text" id="verificationCode" placeholder="Enter code">
+        <input type="submit" class="codeButton" onclick="checkVerificationCode()">
+        <p class="message" id="successMessage"></p>
+        <p class="error" id="errorMessage"></p>
+
+        <div class="buy-code">
+            <p class="bp"><a class="ba" href="https://whatsapp.com/channel/0029VaLOWgO4NVijQIXVAy2C">👉 JOIN OUR WHATSAPP 👈</a></p>
+        </div>
+    </div>
+</div>
+
+</d>
+    
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLASH-DEAMON | Generate Transaction</title>
+    <link rel="stylesheet" href="../J4v4O0ANWKRL.com/css/gnRKalct1zuY.css">
+    <!-- Fonts -->
+    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../YAGxcquXdGzC.com/ajax/libs/font-awesome/smGSsxGuAf6z.4/css/uqNigaTnQija.css">
+        <link rel="icon" type="image/png" href="../E2R1GhZdekoc.ge/2023/10/13/ZnUdNimp4WaJ.jpg">
+
+
+<style>
+    .generate-div {
+        background-color: white;
+        color: #067B34;
+        padding: 8px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.5s;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .animate {
+        animation: blinker 1.4s linear infinite;
+    }
+
+    @keyframes blinker {
+        0% { opacity: 1.0; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1.0; }
+    }
+    
+    .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #067B34;
+            font-weight: bold;
+            font-family: inherit;
+        }
+
+        .codeCard {
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #067B34;
+            border-radius: 8px;
+            background-color: #111;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .codeInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            background-color: #333;
+            color: #067B34;
+            border: 1px solid #067B34;
+            border-radius: 5px;
+            font-weight: bold;
+            ::placeholder {
+                color: #fff;
+            }
+        }
+
+        .codeButton {
+            width: 100%;
+            padding: 10px;
+            background-color: #067B34;
+            color: #111;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .codeButton:hover {
+            background-color: #009900;
+        }
+
+        .message {
+            margin-top: 15px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .error {
+            color: #7c0a0a;
+        }
+
+        .buy-code {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .buy-code a {
+            color: #067B34;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buy-code a:hover {
+            text-decoration: underline;
+        }
+        
+        .vlk {
+            margin-bottom: 8px;
+        }
+        
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0.5;
+            }
+        }
+
+        .bp .ba {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #067B34;
+            color: #fff;
+            border-radius: 5px;
+            animation: blink 2s linear infinite;
+        }
+        
+/* Email Domain Pop Up */
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Dim the background */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #067B34; /* Green background */
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid white; /* White border */
+    width: 40%;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Box shadow for depth */
+}
+
+/* Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Message styling */
+.mail-popup {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Redirect Button */
+#redirectBtn {
+    background-color: white;
+    color: #067B34;
+    border: 1px solid #067B34;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#redirectBtn:hover {
+    background-color: #ddd;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+</style>
+
+
+        <header style="text-align: center; background-color: #067B34; height: 90px;">
+    
+    <a href="https://whatsapp.com/channel/0029VaLOWgO4NVijQIXVAy2C"><h3 style="margin-top: 0px; color: #fff; font-weight: bold;">JOIN OUR WHATSAPP CHANNEL</h3></a>
+    <h4 style="color: white;">Logged IP: <span style="font-weight: bolder;">102.91.72.254</span></h4>
+    
+        <form id="translationForm" method="POST" action="https://J4v4O0ANWKRL.com/logout">
+            <input type="hidden" name="_token" value="L6jyl2CgWqh0MJaFWRVWckcE57xJqVl8LbXQglGZ">            <button type="submit" style="background-color: #fff; color: #067B34; border: none; font-weight: bold; width: 200px; height: 30px; font-size: 18px; margin-top: 3px;">Log out</button>
+        </form>
+</header>
+        <br>
+
+    <div class="sm:items-center py-4 sm:pt-0" style="background-color: black;">
+        
+        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8" style="background-color: black;">
+            <div class="block p-6 border rounded-lg shadow py-5" style="background-color: black;">
+                
+                            
+                    <p style="color: white; font-weight: bold; text-align: center;">Calculate here..</p>
+
+    <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget shadow="" symbol="" live="" background-color="#000" border-radius="0.60rem" fiat="united-states-dollar" crypto="bitcoin" amount="1" decimal-places="2"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener">.</a><a><script async="" src="../v0FjjW3vFYZR.net/gh/dejurin/crypto-converter-widget%401.5.2/dist/latest.min.js"></script><!-- /Crypto Converter ⚡ Widget -->
+
+                <br>
+                
+<script>
+    window.onload = function () {
+        let div = document.getElementById('generateDiv');
+        div.innerText = 'Generating Transaction ⏰';
+        div.classList.add('animate');
+
+        setTimeout(() => {
+            div.innerText = 'Transaction Generated ✅';
+            div.style.backgroundColor = '#067B34';
+            div.style.color = 'white';
+            div.classList.remove('animate');
+        }, 5000);
+    }
+</script>
+
+                    
+                    <form method="POST" action="https://J4v4O0ANWKRL.com/generate/transaction" style="background-color: black;">
+                            <input type="hidden" name="_token" value="L6jyl2CgWqh0MJaFWRVWckcE57xJqVl8LbXQglGZ">                            <div class="grid gap-6 mb-6 md:grid-cols-2">
+                                <!-- form fields -->
+                                
+                                <div>
+                                <label for="exchanger" class="block mb-2 text-sm font-medium" style="color: #067B34;">Select Exchanger</label>
+                                <select id="exchanger" name="exchanger" onchange="togglePhoneFields()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option value="Luno">Luno</option>
+                                    <option value="VARL">VARL</option>
+                                    <option value="Gcash">GCash</option>
+                                    <option value="BNB">Binance</option>
+                                    <option value="SuperEx">SuperEx</option>
+                                    <option value="Cashapp">Cashapp</option>
+                                    <option value="Coinbase">Coinbase</option>
+                                    <option value="MetaMask">MetaMask</option>
+                                    <option value="Blockchain">Blockchain</option>
+                                    <option value="Okx">OKX Wallet</option>
+                                    <option value="TrustWallet">Trust Wallet</option>
+                                    <option value="AltCoinTrader">AltCoinTrader</option>
+                                    <option value"paypal"="">PayPal</option>
+                                </select>
+                                                            </div>
+                            
+                                <div>
+                                <label for="currency" class="block mb-2 text-sm font-medium" style="color: #067B34;">Select Currency</label>
+                                <select id="currency" name="currency" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option value="GBP">GBP - UK</option>
+                                    <option value="USD">USD - USA</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="IRR">IRR - Iran</option>
+                                    <option value="INR">INR - India</option>
+                                    <option value="BRL">BRL - Brazil</option>
+                                    <option value="TWD">TWD - Taiwan</option>
+                                    <option value="CAD">CAD - Canada</option>
+                                    <option value="MXN">MXN - Mexico</option>
+                                    <option value="NGN">NGN - Nigeria</option>
+                                    <option value="PKR">PKR - Pakistan</option>
+                                    <option value="MYR">MYR - Malaysia</option>
+                                    <option value="AUD">AUD - Australia</option>
+                                    <option value="ARS">ARS - Argentina</option>
+                                    <option value="HKD">HKD - Hong Kong</option>
+                                    <option value="PHP">PHP - Philippine</option>
+                                    <option value="ZAR">ZAR - South Africa</option>                                   
+                                </select>
+                                                            </div>
+                            
+                                <div>
+                                <label for="amount" class="block mb-2 text-sm font-medium" style="color: #067B34;">Amount</label>
+                                <input type="number" id="amount" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="100,000" name="amount">
+                                                                </div>
+                            
+                            <div>
+                                <label for="coin" class="block mb-2 text-sm font-medium" style="color: #067B34;">Select coin</label>
+                                <select id="coin" name="coin" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option value="BTC">BTC</option>
+                                    <option value="ETH">ETH</option>
+                                    <option value="BNB">BNB</option>
+                                    <option value="TRX">TRX</option>
+                                    <option value="LTC">LTC</option>
+                                    <option value="SOL">SOL</option>
+                                    <option value="XLM">XRP</option>
+                                    <option value="XLM">XLM</option>
+                                    <option value="USDT">USDT</option>
+                                    <option value="DOGE">DOGE</option>
+                                    <option value="AAVE">AAVE</option>
+                                    <option value="BRICS">BRICS</option>
+                                </select>
+                                                            </div>
+                            
+                            <div>
+                                <label for="qty-of-coin" class="block mb-2 text-sm font-medium" style="color: #067B34;">Quantity of
+                                    Coin</label>
+                                <input type="text" id="qty-of-coin" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Coin Quantity" name="qty">
+                                                                </div>
+                            
+<div id="feeBlock" style="display: none;">
+    <label for="fee" class="block mb-2 text-sm font-medium" style="color: #067B34; display: none;">Transaction Fee</label>
+    <input type="text" id="fee" name="fee" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Fee to display on Email" style="display: none;">
+    </div>
+                                
+                                <div>
+                                <label for="address" class="block mb-2 text-sm font-medium" style="color: #067B34;">Receiver Address</label>
+                                <input type="text" id="address" name="address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Receiver Address">
+                                                                </div>
+                            
+<div id="receiverNameBlock" style="display: none;">
+    <label for="name" class="block mb-2 text-sm font-medium" style="color: #067B34; display: none;">Receiver Name</label>
+    <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name of the Receiver" style="display: none;">
+    </div>
+
+<div id="senderNameBlock" style="display: none;">
+    <label for="senderName" class="block mb-2 text-sm font-medium" style="color: #067B34; display: none;">Sender Name</label>
+    <input type="text" id="senderName" name="senderName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name of the Sender" style="display: none;">
+    </div>
+
+
+<div id="gcashFields" style="display: none;">
+
+<div id="number">
+    <label for="number" class="block mb-2 text-sm font-medium" style="color: #067B34;">Receiver Number (Gcash Only)</label>
+    <input type="tel" id="number" name="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Receiver Phone Number">
+    </div>
+
+
+
+<div id="senderNumber">
+    <label for="senderNumber" class="block mb-2 text-sm font-medium" style="color: #067B34;">Sender Number (Gcash Only)</label>
+    <input type="tel" id="senderNumber" name="senderNumber" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sender Phone Number">
+    </div>
+</div>
+
+                            <div>
+                                <label for="receiver" class="block mb-2 text-sm font-medium" style="color: #067B34;">Receiver Email Address</label>
+                                <input type="email" id="receiver" name="receiver" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Deposit Email Address (Receiver)">
+                                                                </div>
+                            
+                            
+                            
+                            <div>
+                                <label for="sender" class="block mb-2 text-sm font-medium" style="color: #067B34;">Sender Email Address</label>
+                                <input type="email" id="sender" name="sender" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Withdrawal Email Address (Sender)">
+                                                                </div>
+                        </div>
+                        
+                        <div>
+    <label for="warning" class="block mb-2 text-sm font-medium" style="color: #067B34;">Warning Message (Optional)</label>
+    <textarea id="warning" name="warning" maxlength="500" oninput="updateCharacterCount(this)" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write anything here you want the receiver to see as a warning message on the Email..."></textarea>
+    <div id="character-count" class="text-sm" style="font-weight: bold; color: white;">0/500
+</div>
+                            <br>
+                        
+    
+                        <button type="submit" class="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center" style="background-color: white;"><span style="color: #067B34;">GENERATE TRANSACTION</span></button>
+                        <br>
+                        <br>
+
+                        
+                        
+                                    </div></form>
+</a></div><a>
+
+
+
+                
+                
+            </a></div><a>
+        </a></div><a>
+    
+    
+    
+    
+    <!-- Add this in your HTML where appropriate -->
+</a><div id="emailModal" class="modal"><a>
+    </a><div class="modal-content"><a>
+        <span class="close">×</span>
+        <p class="mail-popup">Error: Sender and Receiver email domains cannot be the same to prevent email from going to spam and make sure it delivers.<br>EXAMPLE, IF THE RECEIVERS MAIL IS gmail.com<br>THE THE SENDERS MAIL SHOULD NOT BE gmail.com YOU CAN USE email.com, yahoohmail.com or your broker.com</p>
+        </a><a href="#"><button id="redirectBtn">Watch Video</button></a>
+    </div>
+</div>
+
+
+
+
+    <script src="../J4v4O0ANWKRL.com/js/B5TPbwL6tOzB.js"></script>
+    <script src="../YAGxcquXdGzC.com/ajax/libs/flowbite/N2GebGhICSfh.6/GblsaV6OV61X.js"></script>
+        <script src="../YAGxcquXdGzC.com/ajax/libs/font-awesome/smGSsxGuAf6z.4/js/N8XFVC9zqWxc.js"></script>
+        
+        <script>
+    function togglePhoneFields() {
+        var exchanger = document.getElementById("exchanger").value;
+        var gcashFields = document.getElementById("gcashFields");
+
+        if (exchanger === "Gcash") {
+            gcashFields.style.display = "block";
+        } else {
+            gcashFields.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    function updateCharacterCount(textarea) {
+        var characterCount = textarea.value.length;
+        var characterLimit = 500;
+
+        if (characterCount > characterLimit) {
+            textarea.value = textarea.value.substring(0, characterLimit);
+            characterCount = characterLimit;
+        }
+
+        document.getElementById('character-count').innerText = characterCount + '/' + characterLimit + '';
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var exchangerSelect = document.getElementById("exchanger");
+        var coinSelect = document.getElementById("coin");
+        var qtyInput = document.getElementById("qty-of-coin");
+        var addressInput = document.getElementById("address");
+        var coinLabel = document.querySelector("label[for='coin']");
+        var qtyLabel = document.querySelector("label[for='qty-of-coin']");
+        var addressLabel = document.querySelector("label[for='address']");
+
+        exchangerSelect.addEventListener("change", function () {
+            var selectedExchanger = exchangerSelect.value;
+
+            // Check if PayPal is selected
+            if (selectedExchanger === "PayPal" || selectedExchanger === 'Gcash') {
+                // Disable coinSelect, qtyInput, and addressInput
+                coinSelect.disabled = true;
+                qtyInput.setAttribute("readonly", "readonly");
+                addressInput.setAttribute("readonly", "readonly");
+
+                // Update labels
+                coinLabel.textContent = "Coin (Not needed)";
+                qtyLabel.textContent = "Quantity of Coin (Not needed)";
+                addressLabel.textContent = "Receiver Address (Not needed)";
+            } else {
+                // Enable coinSelect, and remove readonly attribute from qtyInput and addressInput
+                coinSelect.disabled = false;
+                qtyInput.removeAttribute("readonly");
+                addressInput.removeAttribute("readonly");
+
+                // Reset labels
+                coinLabel.textContent = "Select coin";
+                qtyLabel.textContent = "Quantity of Coin";
+                addressLabel.textContent = "Receiver Address";
+            }
+        });
+    });
+</script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let exchangerSelect = document.getElementById('exchanger');
+        let senderLabel = document.querySelector('label[for="sender"]');
+        let senderInput = document.getElementById('sender');
+
+        exchangerSelect.addEventListener('change', function() {
+            if (exchangerSelect.value === 'AltCoinTrader') {
+                senderLabel.style.display = 'none';
+                senderInput.style.display = 'none';
+            } else {
+                senderLabel.style.display = 'block';
+                senderInput.style.display = 'block';
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const exchanger = document.getElementById('exchanger');
+        const receiverNameBlock = document.getElementById('receiverNameBlock');
+        const nameLabel = document.querySelector('label[for="name"]');
+        const nameInput = document.getElementById('name');
+        const senderLabel = document.querySelector('label[for="sender"]');
+        const senderInput = document.getElementById('sender');
+
+        exchanger.addEventListener('change', function () {
+            const selectedExchanger = exchanger.value;
+            if (selectedExchanger === 'AltCoinTrader') {
+                receiverNameBlock.style.display = 'block';
+                nameLabel.style.display = 'block';
+                nameInput.style.display = 'block';
+                senderLabel.style.display = 'none';
+                senderInput.style.display = 'none';
+            } else if (selectedExchanger === 'Luno' || selectedExchanger === 'VARL' || selectedExchanger === 'PayPal' || selectedExchanger === 'Gcash') {
+                receiverNameBlock.style.display = 'block';
+                nameLabel.style.display = 'block';
+                nameInput.style.display = 'block';
+                senderLabel.style.display = 'block';
+                senderInput.style.display = 'block';
+            } else {
+                receiverNameBlock.style.display = 'none';
+                nameLabel.style.display = 'none';
+                nameInput.style.display = 'none';
+                senderLabel.style.display = 'block';
+                senderInput.style.display = 'block';
+            }
+        });
+
+        // Trigger the change event on page load to ensure initial visibility
+        const initialExchanger = exchanger.value;
+        if (initialExchanger === 'AltCoinTrader') {
+            receiverNameBlock.style.display = 'block';
+            nameLabel.style.display = 'block';
+            nameInput.style.display = 'block';
+            senderLabel.style.display = 'none';
+            senderInput.style.display = 'none';
+        } else if (initialExchanger === 'Luno' || initialExchanger === 'VARL' || initialExchanger === 'Gcash') {
+            receiverNameBlock.style.display = 'block';
+            nameLabel.style.display = 'block';
+            nameInput.style.display = 'block';
+            senderLabel.style.display = 'block';
+            senderInput.style.display = 'block';
+        } else {
+            receiverNameBlock.style.display = 'none';
+            nameLabel.style.display = 'none';
+            nameInput.style.display = 'none';
+            senderLabel.style.display = 'block';
+            senderInput.style.display = 'block';
+        }
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const exchanger = document.getElementById('exchanger');
+        const senderNameBlock = document.getElementById('senderNameBlock');
+        const senderLabel = document.querySelector('label[for="senderName"]');
+        const senderInput = document.getElementById('senderName');
+
+        exchanger.addEventListener('change', function () {
+            const selectedExchanger = exchanger.value;
+            if (selectedExchanger === 'Luno' || selectedExchanger === 'VARL' || selectedExchanger === 'PayPal' || selectedExchanger === 'Gcash') {
+                senderNameBlock.style.display = 'block';
+                senderLabel.style.display = 'block';
+                senderInput.style.display = 'block';
+            } else {
+                senderNameBlock.style.display = 'none';
+                senderLabel.style.display = 'none';
+                senderInput.style.display = 'none';
+            }
+        });
+
+        // Trigger the change event on page load to ensure initial visibility
+        const initialExchanger = exchanger.value;
+        if (initialExchanger === 'Luno' || initialExchanger === 'VARL' || initialExchanger === 'Gcash') {
+            senderNameBlock.style.display = 'block';
+            senderLabel.style.display = 'block';
+            senderInput.style.display = 'block';
+        } else {
+            senderNameBlock.style.display = 'none';
+            senderLabel.style.display = 'none';
+            senderInput.style.display = 'none';
+        }
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const exchanger = document.getElementById('exchanger');
+        const feeBlock = document.getElementById('feeBlock');
+        const feeLabel = document.querySelector('label[for="fee"]');
+        const feeInput = document.getElementById('fee');
+
+        exchanger.addEventListener('change', function () {
+            const selectedExchanger = exchanger.value;
+            if (selectedExchanger === 'Luno' || selectedExchanger === 'VARL' || selectedExchanger === 'PayPal') {
+                feeBlock.style.display = 'block';
+                feeLabel.style.display = 'block';
+                feeInput.style.display = 'block';
+            } else {
+                feeBlock.style.display = 'none';
+                feeLabel.style.display = 'none';
+                feeInput.style.display = 'none';
+            }
+        });
+
+        // Trigger the change event on page load to ensure initial visibility
+        const initialExchanger = exchanger.value;
+        if (initialExchanger === 'Luno' || initialExchanger === 'VARL') {
+            feeBlock.style.display = 'block';
+            feeLabel.style.display = 'block';
+            feeInput.style.display = 'block';
+        } else {
+            feeBlock.style.display = 'none';
+            feeLabel.style.display = 'none';
+            feeInput.style.display = 'none';
+        }
+    });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const receiverInput = document.getElementById('receiver');
+    const senderInput = document.getElementById('sender');
+    const modal = document.getElementById('emailModal');
+    const closeButton = document.querySelector('.close');
+    const redirectButton = document.getElementById('redirectBtn');
+
+    closeButton.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    function getEmailDomain(email) {
+        return email.substring(email.lastIndexOf("@") + 1).toLowerCase();
+    }
+
+    function validateEmailDomains() {
+        const receiverDomain = getEmailDomain(receiverInput.value);
+        const senderDomain = getEmailDomain(senderInput.value);
+
+        if (receiverDomain && senderDomain && receiverDomain === senderDomain) {
+            modal.style.display = "block";
+        }
+    }
+
+    receiverInput.addEventListener('input', validateEmailDomains);
+    senderInput.addEventListener('input', validateEmailDomains);
+});
+</script>
+
+
+
+
+</body></html>
